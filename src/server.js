@@ -1,16 +1,23 @@
 import express from "express";
+import { application } from "express";
 
 const PORT = 4000;
 
 const app = express();
 
+const logger = (req, res, next) => {
+  console.log(` ${req.method}  ${req.url}`);
+  next();
+}
+
 const handleHome = (req, res) => {
-  console.log(req)
+  return res.send("I love middlewares");
 };
 
-app.get("/", handleHome);
+app.get("/",logger, handleHome);
 
-const handleListening = () => console.log(`Server listenting on ports84`);
+
+const handleListening = () => console.log(`Server listenting on port http://localhost:${PORT}`);
 
 app.listen(PORT, handleListening);
 
