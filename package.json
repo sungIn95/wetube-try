@@ -18,7 +18,6 @@
   "homepage": "https://github.com/sungIn95/wetube-try#readme",
   "dependencies": {
     "express": "^4.18.1",
-    "mongoose": "^6.3.3",
     "morgan": "^1.10.0",
     "pug": "^3.0.2"
   },
