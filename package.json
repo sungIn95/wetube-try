@@ -8,7 +8,7 @@
     "url": "git+https://github.com/sungIn95/wetube-try.git"
   },
   "scripts": {
-    "dev": "nodemon --exec babel-node src/server.js"
+    "dev": "nodemon --exec babel-node src/init.js"
   },
   "author": "Sungin <dlrkehrud@naver.com>",
   "license": "MIT",

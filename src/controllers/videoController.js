@@ -1,29 +1,4 @@
-let videos = [
-  {
-    title: "First Video",
-    rating:5,
-    comments:2,
-    createdAt: "2 minutes ago",
-    views:1,
-    id:1,
-  },
-  {
-    title: "Second video",
-    rating:5,
-    comments:2,
-    createdAt: "2 minutes ago",
-    views:59,
-    id:2,
-  },
-  {
-    title: "Third video Video",
-    rating:5,
-    comments:2,
-    createdAt: "2 minutes ago",
-    views:59,
-    id:3,
-  },
-];
+
 export const trending = (req, res) => {
   return res.render("Home", {pageTitle: "Home", videos });
 };
