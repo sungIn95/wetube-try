@@ -18,7 +18,11 @@ export const home = async (req, res) => {
 };
 export const watch = (req, res) => {
   const { id } = req.params;
-
+  const video = await Video.findById(id);
+  console.log(id);
+  function hello() {
+    console.log("Hello from Nomad Coders");
+  }
   return res.render("watch", { pageTitle: `Watching` });
 
 
